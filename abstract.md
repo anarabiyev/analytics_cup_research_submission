@@ -23,7 +23,7 @@ $$
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
 $$
 
-<!-- spacer -->
+akjsbd
 
 $$
 m_i = \text{clip}\left(
