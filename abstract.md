@@ -13,5 +13,5 @@ $$
 $$
 
 where:
-- $ p_i^{\text{comp}} $ is the probability that pass option $$ i $$ is successfully completed  
+- $ p_i^{\text{comp}} $ is the probability that pass option $i$ is successfully completed  
 - $ \Delta xT_i $ is the change in Expected Threat resulting from the completed pass
