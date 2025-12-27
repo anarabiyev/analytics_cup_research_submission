@@ -8,9 +8,9 @@ For each on-ball possession with multiple passing options, a context-aware utili
 
 For each option *i*, the **attacking expected value** is defined as:
 
-\[
+$$
 A_i = p^{comp}_i \cdot \Delta xT_i
-\]
+$$
 
 where:
 - \( p^{comp}_i \) is the probability of pass completion
