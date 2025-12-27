@@ -21,8 +21,9 @@ To account for downside risk, a turnover expected value, $TurnoverEV_i$, is comp
 
 $$
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
+$$
 
-
+$$
 m_i = \text{clip}\left(
 1 + w_{diff}\,\text{PassDifficulty}_i
 + w_{dist}\,\text{Dist}_i
