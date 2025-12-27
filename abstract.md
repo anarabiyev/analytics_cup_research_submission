@@ -8,12 +8,10 @@ The methodology is to calculate **attacking upside**, **turnover cost**, and a *
 
 For each on-ball possession with multiple passing options available, a **context-aware utility value** is computed to assess and rank the options. For each option $ i $, the **attacking expected value**, denoted as $ \text{AttackEV}_i $, is estimated as the product of the pass completion probability and the resulting xT gain if the pass is completed.
 
-## Attacking Expected Value
-
 $$
 \text{AttackEV}_i = p_i^{\text{comp}} \cdot \Delta xT_i
 $$
 
 where:
-- $ p_i^{\text{comp}} $ is the probability that pass option $ i $ is successfully completed  
+- $ p_i^{\text{comp}} $ is the probability that pass option $$ i $$ is successfully completed  
 - $ \Delta xT_i $ is the change in Expected Threat resulting from the completed pass
