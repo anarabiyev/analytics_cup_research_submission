@@ -23,15 +23,10 @@ $$
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
 $$
 
-akjsbd
+
 
 $$
-m_i = \text{clip}\left(
-1 + w_{diff}\,\text{PassDifficulty}_i
-+ w_{dist}\,\text{Dist}_i
-+ w_{press}\,P_i,
-\; m_{min},\; m_{max}
-\right)
+m_i = \text{clip}\left(1 + w_{diff}\,\text{PassDifficulty}_i+ w_{dist}\,\text{Dist}_i+ w_{press}\,P_i,\; m_{min},\; m_{max}\right)
 $$
 
 Decision context is incorporated through a risk parameter $\lambda_i$ modelled via a bounded sigmoid function of pitch zone, player role, defensive pressure, and match urgency (time and score).
