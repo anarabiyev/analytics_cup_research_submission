@@ -19,9 +19,9 @@ where:
 To account for downside risk, a turnover expected value, $TurnoverEV_i$, is computed as the probability of pass failure multiplied by a bounded risk multiplier derived from pass difficulty, relative pass distance within the option set, and defensive pressure at the target location.
 
 
-$$
+```math
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
-$$
+
 
 $$
 m_i = \text{clip}\left(
@@ -52,7 +52,7 @@ With $pass_u$ values available for the chosen and other passing options, a penal
 
 # Results
 
-Across 10 matches (308 player–match observations), Decision–xT (D-xT) reduced total xT from 66.28 to 50.49, corresponding to a 23.8% decrease, indicating that a substantial share of xT arose from suboptimal passing decisions. Match-level reductions were consistent, ranging from 19.0% to 30.1%. At the player level, high-$xT$ contributors experienced large absolute and relative reductions (exceeding 45%), reflecting frequent selection of lower-utility options. In contrast, decision-efficient players preserved nearly all of their xT, with reductions below 5%, demonstrating that D-xT differentiates contribution based on decision quality rather than volume alone.
+Across 10 matches (308 player–match observations), Decision–xT (D-xT) reduced total xT from 66.28 to 50.49, corresponding to a 23.8% decrease, indicating that a substantial share of xT arose from suboptimal passing decisions. Match-level reductions were consistent, ranging from 19.0% to 30.1%. At the player level, high-xT contributors experienced large absolute and relative reductions (exceeding 45%), reflecting frequent selection of lower-utility options. In contrast, decision-efficient players preserved nearly all of their xT, with reductions below 5%, demonstrating that D-xT differentiates contribution based on decision quality rather than volume alone.
 
 # Conclusion
 
