@@ -19,9 +19,11 @@ where:
 To account for downside risk, a turnover expected value, $TurnoverEV_i$, is computed as the probability of pass failure multiplied by a bounded risk multiplier derived from pass difficulty, relative pass distance within the option set, and defensive pressure at the target location.
 
 
-```math
+$$
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
+$$
 
+<!-- spacer -->
 
 $$
 m_i = \text{clip}\left(
