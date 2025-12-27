@@ -13,7 +13,7 @@ A_i = p^{comp}_i \cdot \Delta xT_i
 $$
 
 where:
-- \( p^{comp}_i \) is the probability of pass completion
+- $\( p^{comp}_i \)$ is the probability of pass completion
 - \( \Delta xT_i \) is the xT gain conditional on completion
 
 To account for downside risk, a **turnover expected value** is computed:
