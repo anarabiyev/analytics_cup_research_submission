@@ -18,9 +18,11 @@ where:
 
 To account for downside risk, a turnover expected value, $TurnoverEV_i$, is computed as the probability of pass failure multiplied by a bounded risk multiplier derived from pass difficulty, relative pass distance within the option set, and defensive pressure at the target location.
 
+
 $$
 TurnoverEV_i = (1 - p_i^{comp}) \cdot m_i
 $$
+
 
 $$
 m_i = \text{clip}\left(
@@ -33,15 +35,19 @@ $$
 
 Decision context is incorporated through a risk parameter $\lambda_i$ modelled via a bounded sigmoid function of pitch zone, player role, defensive pressure, and match urgency (time and score).
 
+
 $$
 z_i = \beta_0 + \beta_{role} Role_i + \beta_{zone} Zone_i + \beta_{pressure} Press_i - \beta_{urgency} Urg_i
 $$
 
+
 The utility of each pass is calculated as:
+
 
 $$
 pass_{u_i} = AttackEV_i - \alpha \cdot \lambda_i \cdot TurnoverEV_i
 $$
+
 
 With $pass_u$ values available for the chosen and other passing options, a penalty system can be generated. For each possession, the utility of the executed pass is compared to all available passing options. A normalized regret is computed as the difference between the best and chosen utilities, scaled by the within-possession utility spread with a small stability floor. This regret is mapped to a bounded penalty factor using an anchored logistic function, ensuring no penalty when the optimal option is selected. The realized $xThreat$ is multiplied by this factor to obtain penalized $xT$.
 
